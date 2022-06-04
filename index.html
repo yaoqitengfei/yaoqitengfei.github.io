@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>瑶琪腾飞-光速链接未来</title>
+    <link rel="icon" href=" /img/icon/图形logo-svg.svg" />
+    <meta name="keywords" content="瑶琪腾飞，光网络，瑶琪，光网络服务" />
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href=" /reset.css" />
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="/css/public.min.css" />
+    <link rel="stylesheet" href="/css/index.min.css" />
+    <link rel="stylesheet" href=" /iconfont2/iconfont.css" />
+    <style>
+      body {
+        font-family: PingFang SC, helvetica neue, hiragino sans gb, arial,
+          microsoft yahei ui, microsoft yahei, simsun, sans-serif;
+      }
+    </style>
+    <!--[if IE]>
+<style type="text/css">
+
+vedio{
+  display:none;
+}
+</style>
+<![endif]-->
+  </head>
+  <body>
+    <!-- 布局开始 -->
+    <div class="indexbox">
+      <!-- 导航栏开始 -->
+      <div class="navbarbox">
+        <a id="logoimg" href="index.html"
+          ><img src=" /img/icon/logo+文字.svg" alt="瑶琪腾飞"
+        /></a>
+
+        <!-- 右侧链接 -->
+        <ul class="menu-top">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="/html/product.html">产品</a></li>
+          <li><a href="/html/question.html">常见问题</a></li>
+          <li><a href="/html/aboutus.html">关于我们</a></li>
+        </ul>
+        <!--【移动端】屏幕<760px时显示的部分，其余像素隐藏 -->
+        <!--icon更多按钮 -->
+        <p
+          class="openbtn iconfont"
+          style="font-size: 32px; line-height: 68px"
+          onclick="openNav()"
+        >
+          &#xe608;
+        </p>
+        <!-- 【移动端】navbar  -->
+        <div id="myNav" class="flex-mobile">
+          <div class="top">
+            <img src=" /img/icon/logo+文字.svg" alt="瑶琪腾飞" />
+            <!--icon关闭按钮 -->
+            <p>
+              <a
+                href="#"
+                class="closebtn iconfont icon-icon-close1"
+                onclick="closeNav()"
+              ></a>
+            </p>
+          </div>
+          <ul class="overlay-content">
+            <li><a href="/index.html">首页</a></li>
+            <li><a href="/html/product.html">产品</a></li>
+            <li><a href="/html/question.html">常见问题</a></li>
+            <li><a href="/html/aboutus.html">关于我们</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- banner -->
+      <div class="bgimg">
+        <div class="img">
+          <!--video视频标签，给上宽高-->
+          <!--视频类型为视频和视频路径-->
+          <video
+            id="video"
+            onmouseover="videoPlayback()" onmouseout="videoStopped()">
+
+          <source type="audio/mp4"
+            src="/img/icon/banner_vedio.mp4">
+          </source>
+          </video>
+        </div>
+        <div class="headlinebox">
+          <p class="headline">光速链接未来</p>
+          <p class="headline-sub">您身边的光网络助力者</p>
+        </div>
+
+        <!-- 三行字 -->
+        <ul class="introbox">
+          <li class="introduction">
+            <span>专家级服务</span>
+            <span>拥有深谙业务和技术的高质量团队</span>
+          </li>
+          <li class="introduction">
+            <span>助力全流程</span>
+            <span>一站式覆盖全流程的服务平台</span>
+          </li>
+          <li class="introduction">
+            <span>敏捷回应</span>
+            <span>以用户为导向，高效回复用户需求</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 产品栏开始 -->
+      <div class="productbox">
+        <!-- 一级标题 -->
+        <i class="iconfont">&#xe604;</i>
+        <div class="first_title">
+          <h1>产品</h1>
+          <a href="/html/product.html">查看更多</a>
+        </div>
+
+        <!-- 一行四个 -->
+        <ul class="productline">
+          <!-- 产品卡片开始 -->
+          <li class="product" onclick="dianwo()">
+            <a href="javascript:void(0) ">
+              <div class="img_box">
+                <img src="/img/product/QDD-800G-DR8+.png" />
+
+                <button class="product_buttom">立即咨询</button>
+              </div>
+              <div class="font_box">
+                <h2 class="font_title">800GBASE-DR8+</h2>
+                <p class="font_explain">
+                  800GBASE-DR8+ QSFP-DD 800G光模块1310nm 2km
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="product" onclick="dianwo()">
+            <a href="javascript:void(0) ">
+              <div class="img_box">
+                <img src="/img/product/OM3-LC-SC.png" />
+
+                <button class="product_buttom">立即咨询</button>
+              </div>
+              <div class="font_box">
+                <h2 class="font_title">OM3-LC-SC</h2>
+                <p class="font_explain">
+                  LC/UPC-SC/UPC双工多模OM3光纤跳线-2.0mm PVC(OFNR)
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="product" onclick="dianwo()">
+            <a href="javascript:void(0) ">
+              <div class="img_box">
+                <img src="/img/product/Q2Q56-200G-A30.png" />
+
+                <button class="product_buttom">立即咨询</button>
+              </div>
+              <div class="font_box">
+                <h2 class="font_title">Q2Q56-200G-A30</h2>
+                <p class="font_explain">
+                  30m 200G QSFP56转2X100G QSFP56有源光缆
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="product" onclick="dianwo()">
+            <a href="javascript:void(0) ">
+              <div class="img_box">
+                <img src="/img/product/SFP-25G-SR.png" />
+
+                <button class="product_buttom">立即咨询</button>
+              </div>
+              <div class="font_box">
+                <h2 class="font_title">SFP-25G-SR</h2>
+                <p class="font_explain">25GBASE-SR SFP28 25G光模块850nm 100m</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 关于我们开始 -->
+      <div class="aboutus">
+        <!-- 【移动端】为了方便flex-direactio方向改变，标题部分提出，web端时不可见 -->
+        <div class="flex-moible">
+          <i class="iconfont">&#xe605;</i>
+          <h1>关于我们</h1>
+        </div>
+        <!-- 文字部分内容 -->
+        <div class="aboutus_content">
+          <i class="iconfont">&#xe605;</i>
+          <h1>关于我们</h1>
+          <p>
+            北京瑶琪腾飞科技发展有限公司是一家IT运维服务公司。凭借其在各个行业领域积累的丰富经验、广泛服务实施能力以及对IT运维服务的深入研究，北京瑶琪腾飞帮助广大客户提高运维服务效率和减轻运维成本。<br /><br />
+            基于在运维管理、信息技术及软硬件外包服务领域的专长，北京瑶琪腾飞为客户提供了“实用的运维服务”战略，帮助客户建立稳定高效的IT环境，并且和客户一起努力成就卓越绩效。借助专业的技术知识，专注的服务能力以及创新的解决方案，始终立足于IT运维服务的前沿。
+          </p>
+          <a href="/html/aboutus.html"><button>了解更多</button></a>
+          <ul>
+            <li>
+              <h1>100%</h1>
+              <span>项目完成</span>
+            </li>
+            <li>
+              <h1>1200+</h1>
+              <span>客户群</span>
+            </li>
+            <li>
+              <h1>180</h1>
+              <span>所获奖项</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 图片部分 -->
+        <div class="aboutus_img"></div>
+      </div>
+
+      <!-- 支持栏目开始 -->
+      <div class="supportbox">
+        <i class="iconfont">&#xe606;</i>
+        <div class="first_title">
+          <h1>服务支持</h1>
+          <span>我们立足于IT服务前沿，提高运维服务效率和减轻运维成本</span>
+        </div>
+        <div class="supportcard_line">
+          <div class="supportcard">
+            <img src="/img/icon/Expert.png" alt="" />
+            <div class="font_box">
+              <h2>专家咨询</h2>
+              <p>
+                资深工程师上门安装、调试、培训，手把手教您如何使用，提供电话协助、远程协助、视频协助等远程技术服务，7*24小时快速响应服务需求
+              </p>
+            </div>
+          </div>
+          <div class="supportcard">
+            <img src="/img/icon/example.png" alt="" />
+            <div class="font_box">
+              <h2>案例服务</h2>
+              <p>
+                结合大量客户典型案例，提供全面安利服务支撑，可以高效的帮助新客户对标优秀企业、掌握成功理念、实现最佳实践
+              </p>
+            </div>
+          </div>
+          <div class="supportcard">
+            <img src="/img/icon/pre-sales.png" alt="" />
+            <div class="font_box">
+              <h2>售前服务</h2>
+              <p>
+                专业的售前服务小组，为您提供专业的技术方案和产品方案。根据您的需求为您量身定制方案，实现价值最大化
+              </p>
+            </div>
+          </div>
+          <div class="supportcard">
+            <img src="/img/icon/suggest.png" alt="" />
+            <div class="font_box">
+              <h2>建议反馈</h2>
+              <p>
+                如您有技术、产品和方案方面的需求和建议，欢迎和我们联系。我们将及时提供服务支持
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------页脚开始------- -->
+      <footer>
+        <!-- 左侧内容区域 -->
+        <div class="footer_left">
+          <div class="footer_p1">
+            <span class="word13">常见问题</span>
+            <ul>
+              <li><a href="./question.html">安装服务</a></li>
+              <li><a href="./question.html">维护服务</a></li>
+              <li><a href="./question.html">常见问题</a></li>
+            </ul>
+          </div>
+          <div class="footer_p1">
+            <span class="word13">联系我们</span>
+            <ul>
+              <li>电话：15652752183</li>
+              <li>业务咨询：dongyan@yaoqitengfei.com</li>
+              <li>QQ：511058979</li>
+              <li>地址：北京昌平区建材城西路新龙大厦A座</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 右侧二维码区域 -->
+        <div class="footer_right">
+          <div>
+            <img src=" /img/icon/二维码.png" />
+            <span>微信扫一扫&nbsp;立即咨询</span>
+          </div>
+        </div>
+      </footer>
+      <div class="footer_bottom">CopyRight 2021 All Right Reserved</div>
+
+      <!-- ----------弹窗------ -->
+
+      <div class="zhezhao" id="zhezhao">
+        <div class="tankuang">
+          <div
+            id="closeicon"
+            class="iconfont icon-icon-close"
+            onclick="hidder()"
+          ></div>
+          <div class="contactway">
+            <h4>立即联系我们</h4>
+            <img src=" /img/icon/二维码.png" alt="瑶琪腾飞 微信" />
+            <p>电话：15652752183</p>
+            <p>e-mail：dongyan@yaoqitengfei.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- index的最后一个div -->
+    </div>
+
+    <!-- 引入联系方式弹框 -->
+    <script src=" /popup/popup.js"></script>
+    <script src=" /js文件集合/onclock_navbar.js"></script>
+    <script>
+      //鼠标移进去
+      function videoPlayback() {
+        //获取视频标签
+        var video = document.getElementById("video");
+        //给视频标签添加缓存播放---video标签属性。
+        video.setAttribute("autoplay", "autoplay");
+        //给视频标签添加循环播放---video标签属性。
+        video.setAttribute("loop", "loop");
+        //播放视频
+        video.play();
+      }
+
+      //鼠标离开
+      function videoStopped() {
+        //获取视频标签
+        var oDiv = document.getElementById("video");
+        //停止播放
+        video.pause();
+      }
+    </script>
+  </body>
+</html>

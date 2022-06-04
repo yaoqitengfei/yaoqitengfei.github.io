@@ -1,0 +1,355 @@
+// 报错看一下有没有加；符号
+$color-primary: #006bfc;
+$color-second: #2192fb;
+$color-border: #d6d6d6 1px solid;
+$fontcolor-white: #fff;
+$fontcolor-first: #000;
+$fontcolor-second: #999;
+$font-h1-28px: 28px;
+$font-h1-mob-18px: 18px;
+$font-h2-16px: 16px;
+$font-second-14px: 14px;
+$font-min: 12px;
+
+// 调试背景及边框
+// 字体16px 字重400 行高22 字色#0000
+@mixin reg16 {
+  font-size: 16px;
+  font-weight: 400;
+  color: $fontcolor-first;
+  line-height: 22px;
+}
+
+// 字体18px 字重600 行高25 字色#0000
+@mixin bold18 {
+  font-size: $font-h1-mob-18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: $fontcolor-first;
+  line-height: 25px;
+}
+// 背景框
+@mixin testbo {
+  border: blue 1px solid;
+}
+// 背景色
+@mixin testbg {
+  background-color: red;
+}
+// 栏目间间距
+@mixin gapwidth {
+  margin-bottom: 96px;
+  //【移动端】屏幕大小为760px时，栏目间间距缩小
+  @media screen and (max-width: 760px) {
+    margin-bottom: 40px;
+  }
+}
+// 一级标题与文字间间距
+@mixin gapwidth_title {
+  margin-bottom: 12px;
+}
+
+// ==================总体调整部位=====================
+// 父级塌陷问题解决方案
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// 删掉所有的下划线
+a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+// 一级标题部分调整
+h1 {
+  font-size: $font-h1-28px;
+  font-weight: 500;
+  line-height: 40px;
+  @include gapwidth_title();
+}
+i {
+  color: $color-primary;
+  font-size: 12px;
+}
+
+// ==================问题部分单独mixin=====================
+@mixin title-h1 {
+  @include bold18;
+}
+
+@mixin iconfont-h1 {
+  font-size: 40px;
+  color: $color-primary;
+}
+
+// ==================问题部分单独mixin=====================
+
+//==========================常见问题部分调整======================
+//--------------- 内容布局开始------------
+.layout {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  @media screen and (max-width: 700px) {
+    // 【移动端】大小为700px时，布局变化
+    margin-top: 20px;
+  }
+
+  .aside {
+    //------------侧边内容区---------
+    display: flex;
+    flex-direction: column;
+    width: 35.5%;
+    .repairbox,
+    .servicebox {
+      // 安装服务和维护服务盒子
+      box-sizing: border-box;
+      width: 100%;
+      background-color: #f5f5f5;
+      margin-bottom: 48px;
+      padding: 11%;
+      .boxtitle {
+        // 标题及iconflex布局
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+        span {
+          // icon部分
+          @include iconfont-h1();
+          margin-bottom: 24px;
+        }
+        h1 {
+          // 标题部分
+          @include title-h1();
+          margin-bottom: 0px;
+        }
+      }
+      // 文字u部分
+      .helptext {
+        @include reg16;
+        margin-bottom: 24px;
+      }
+      .subhead {
+        @include reg16;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      .servicetime {
+        @include reg16;
+        margin-bottom: 30px;
+      }
+      button {
+        background-color: $fontcolor-white;
+        border: solid $color-primary;
+        width: 120px;
+        height: 48px;
+        margin: 0px auto;
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    // 【移动端】大小为700px时，布局变化
+    display: flex;
+    flex-direction: column;
+    .aside {
+      flex-direction: column;
+      width: 100%;
+      .repairbox,
+      .servicebox {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 40px;
+        .boxtitle {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          margin-bottom: 16px;
+          span {
+            @include iconfont-h1();
+            display: block;
+            margin-bottom: 0px;
+          }
+          h1 {
+            @include title-h1();
+            display: block;
+            margin-bottom: 0px;
+            padding: 0 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main {
+  //--------------主要内容区--------------
+  width: 60%;
+  height: 300px;
+  .boxtitle {
+    // icon及标题部分
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    span {
+      @include iconfont-h1();
+      display: block;
+    }
+    h1 {
+      @include title-h1();
+      display: block;
+      margin-bottom: 0px;
+      padding: 0 0 0 10px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    // 【移动端】700px以下，
+    width: 100%;
+  }
+
+  // ------------- 最外层盒子---------------
+  .container {
+    margin-top: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    //   列表样式
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  // 单个抽屉开始
+  .dropdown {
+    position: relative;
+    a {
+      text-decoration: none;
+    }
+
+    & [data-toggle="dropdown"] {
+      //   未点击时的样式
+      display: block;
+      color: $fontcolor-first;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      padding: 24px 0;
+      // border-bottom: $color-border;
+      border-top: $color-border;
+      *:hover {
+        color: red;
+      }
+      &:before {
+        // 这里有个问题icon点击不会变化！！！！
+        position: absolute;
+        display: block;
+        font-family: "iconfont"; //引入iconfont
+        content: "\e60a";
+        font-size: 24px;
+        color: $fontcolor-first;
+        right: 0;
+        top: 24px;
+      }
+    }
+    @media screen and (min-width: 700px) {
+      &:hover::before {
+        //  鼠标悬停时下边线动画
+        // 使用一个伪类制作了个空内容，并且与dorpdown a位置重合
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-bottom: 2px solid $color-primary;
+        animation: mymove 0.4s ease-out;
+        -moz-animation: mymove 0.4s ease-out;
+        -webkit-animation: mymove 0.4s ease-out;
+      }
+    }
+
+    & > .dropdown-menu {
+      max-height: 0;
+      overflow: hidden;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 0;
+        a {
+          display: block;
+          background: $fontcolor-white;
+          font-weight: 400;
+          color: $fontcolor-first;
+          line-height: 20px;
+          font-size: 14px;
+          padding: 24px 0;
+        }
+        span {
+          background: $fontcolor-white;
+          font-weight: 400;
+          color: $fontcolor-second;
+          line-height: 17px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    & > input[type="checkbox"] {
+      opacity: 0;
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    & :checked ~ .dropdown-menu {
+      max-height: 9999px;
+      display: block;
+      animation: showAnimation 0.5s ease-in-out;
+      -moz-animation: showAnimation 0.5s ease-in-out;
+      -webkit-animation: showAnimation 0.5s ease-in-out;
+    }
+  }
+
+  .dropdown > input[type="checkbox"]:checked + a[data-toggle="dropdown"] {
+    color: $color-primary;
+    font-weight: 600;
+    border-bottom: 2px blue solid;
+
+    &:before {
+      color: $color-primary;
+      -moz-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      -webkit-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+      -moz-transition: -moz-transform 0.6s;
+      -o-transition: -o-transform 0.6s;
+      -webkit-transition: -webkit-transform 0.6s;
+      transition: transform 0.6s;
+    }
+  }
+
+  @keyframes mymove {
+    100% {
+      width: 0%;
+    }
+    80% {
+      width: 100%;
+    }
+    0% {
+      width: 0%;
+    }
+  }
+}

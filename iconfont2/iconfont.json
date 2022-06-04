@@ -1,0 +1,79 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "29439556",
+      "name": "PRODUCT",
+      "font_class": "PRODUCT",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "29439557",
+      "name": "ABOUTUS",
+      "font_class": "ABOUTUS",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "29439558",
+      "name": "SUPPORT",
+      "font_class": "SUPPORT",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "29892320",
+      "name": "close",
+      "font_class": "icon-close",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "29892390",
+      "name": "more",
+      "font_class": "more",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "29927843",
+      "name": "icon-close",
+      "font_class": "icon-close1",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "30018343",
+      "name": "arrowright",
+      "font_class": "arrowright",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "30018344",
+      "name": "Q&A",
+      "font_class": "a-QA",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "30018345",
+      "name": "repair",
+      "font_class": "repair",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "30018346",
+      "name": "service",
+      "font_class": "service",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    }
+  ]
+}

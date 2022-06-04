@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>常见问题_瑶琪腾飞</title>
+    <link rel="icon" href="/img/icon/图形logo-svg.svg" />
+    <meta name="keywords" content="瑶琪腾飞，光网络，瑶琪，光网络服务" />
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="/reset.css" />
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="/css/public.min.css" />
+    <link rel="stylesheet" href="/css/qusetion.css" />
+    <link rel="stylesheet" href="/iconfont2/iconfont.css" />
+  </head>
+
+<body>
+      <!-- 导航栏开始 -->
+      <div class="navbarbox">
+        <a id="logoimg" href="/index.html"><img src=" /img/icon/logo+文字.svg" alt="瑶琪腾飞" /></a>
+
+        <!-- 右侧链接 -->
+        <ul class="menu-top">
+          <li><a href="/index.html">首页</a></li>
+          <li><a href="./product.html">产品</a></li>
+          <li><a href="./question.html">常见问题</a></li>
+          <li><a href="./aboutus.html">关于我们</a></li>
+        </ul>
+        <!--【移动端】屏幕<760px时显示的部分，其余像素隐藏 -->
+        <!--icon更多按钮 -->
+        <p
+          class="openbtn iconfont"
+          style="font-size: 32px; line-height: 68px"
+          onclick="openNav()"
+        >
+          &#xe608;
+        </p>
+        <!-- 【移动端】navbar  -->
+        <div id="myNav" class="flex-mobile">
+          <div class="top">
+            <img src=" /img/icon/logo+文字.svg" alt="瑶琪腾飞" />
+            <!--icon关闭按钮 -->
+            <p>
+              <a
+                href="#"
+                class="closebtn iconfont icon-icon-close1"
+                onclick="closeNav()"
+              ></a>
+            </p>
+          </div>
+          <ul class="overlay-content">
+            <li><a href="/index.html">首页</a></li>
+            <li><a href="./product.html">产品</a></li>
+            <li><a href="./question.html">常见问题</a></li>
+            <li><a href="./aboutus.html">关于我们</a></li>
+          </ul>
+        </div>
+      </div>
+  <!-- =========内容区开始============================ -->
+  <div class="layout">
+    <!-- 侧边栏 -->
+    <div class="aside">
+      <!-- 安装服务卡片 -->
+      <section class="repairbox">
+        <!-- 一级标题 -->
+        <div class="boxtitle"> <span class="iconfont icon-service"></span>
+          <h1>安装服务</h1>
+        </div>
+
+        <p class="helptext">购买产品后我们会为您提供为用户提供专业的安装服务，请联系我们进行预约。</p>
+        <p class="subhead">安装时间</p>
+        <p class="servicetime">10:00AM-16:00PM&nbsp;&nbsp;周一至周日</p>
+        <button onclick="dianwo()">立即咨询</button>
+      </section>
+      <!-- 维护服务卡片 -->
+      <section class="servicebox">
+        <!-- 一级标题 -->
+        <div class="boxtitle">
+          <span class="iconfont icon-repair"></span>
+          <h1>维护服务</h1>
+        </div>
+
+        <p class="helptext">请告诉我们一些具体信息，我们会为您提供适用的解决方案。您可以通过电话、微信、电子邮件等方式联系我们。</p>
+        <p class="subhead">维护时间</p>
+        <p class="servicetime">9:00-16:00&nbsp;&nbsp;周一至周五</p>
+        <button onclick="dianwo()">立即咨询</button>
+      </section>
+    </div>
+    <!-- 主要内容 -->
+    <div class="main">
+      <!-- 一级标题 -->
+      <div class="boxtitle">
+        <span class="iconfont icon-a-QA"></span>
+        <h1>常见问题</h1>
+      </div>
+
+      <!-- 常见问题区域开始 -->
+      <div class="container">
+        <ul>
+          <!-- 问题1开始 -->
+          <li class="dropdown">
+            <input type="checkbox" />
+            <!-- 标题部分 -->
+            <a href="#" data-toggle="dropdown">光模块光功率性能劣化</a>
+            <ul class="dropdown-menu">
+              <!-- 内容部分 -->
+              <li><a href="#">
+                  光模块光功率劣化性能故障可能导致光模块出现以下现象：
+                  </br>
+                  1、偏置电流在正常范围内，光功率超出 / 低于控制范围；
+                  </br>
+                  </br>
+                  2、没有灯亮，BIAS 值显示为0，或者BIAS短路，数值很大，显示为90mA～150mA；
+                  </br>
+                  </br>
+                  3、调试过程中有灯亮起，但光功率无变化；
+                  </br>
+                  </br>
+                  若光模块出现上述<b>第一种现象</b>，则可能是因为光模块TOSA发射组件损坏、TOSA PINs
+                  PD+焊接不良，或功率和电阻与偏置电流不匹配，对应解决办法有：更换光模块的TOSA发射组件、重新焊接加固TOSA PINs
+                  PD+，或调整功率与电阻；
+                  </br>
+                  </br>
+                  若光模块出现上述<b>第二种现象</b>，也有可能是因为TOSA PINs PD+焊接不良，或存储芯片出现故障、LD- /LD+ 线上的磁珠受损，对应解决办法有：重新焊接加固TOSA PINs
+                  PD+、更换光模块上的存储芯片、重新连接LD- /LD+ 线上相同类型的磁珠；
+                  </br>
+                  </br>
+                  若光模块出现上述<b>第三种现象</b>，也有可能是因为TOSA发射组件损坏，或TOSA PINs LD- 焊接不良，此时采取更换TOSA发射组件，或重新焊接加固TOSA PINs PD+即可。
+                  </br>
+                  </br>
+                  <!-- 转载链接 -->
+                  <span> 转自：https://baijiahao.baidu.com/s?id=1716029123689695865&wfr=spider&for=pc
+                  </span></a>
+              </li>
+            </ul>
+          </li>
+          <!-- 问题2开始 -->
+          <li class="dropdown">
+            <input type="checkbox" />
+            <!-- 标题部分 -->
+            <a href="#" data-toggle="dropdown">光模块工作电流性能不佳</a>
+            <ul class="dropdown-menu">
+              <!-- 内容部分 -->
+              <li><a href="#">
+                  光模块工作电流性能不佳的现象有三种：
+                  </br>
+                  </br>
+                  1、开路工作电流小于70mA；
+                  </br>
+                  </br>
+                  造成上述情况的主要原因为光模块MOS损坏、或该程序尚未被烧录，此时只需更换MOS管，或重新烧录程序即可。
+                  </br>
+                  </br>
+                  2、工作电流大于300mA；
+                  </br>
+                  </br>
+                  当光模块出现上述情况时，则需更换组件，或观察元件之间是否存在连锡或贴片不良的情况。
+                  </br>
+                  </br>
+                  3、短路动作电流大于500mAV；
+                  </br>
+                  </br>
+                  造成上述情况的主要原因为TOSA\ROSA或者芯片内部短路，或是PCBA的各种元件中还有锡的存在，或PCBA的VCC和GND短路，当遇到这些情况时，则需要更换损坏的TOSA/ROSA或芯片，若是PCBA元件中还存在有锡的情况，则需将锡均匀的分开，若是PCBA的短路造成的电流过大，那只能选择报废PCBA，这种故障无法被修复。
+                  </br>
+                  </br>
+                  <!-- 转载链接 -->
+                  <span> 转自：https://baijiahao.baidu.com/s?id=1716029123689695865&wfr=spider&for=pc
+                  </span></a>
+              </li>
+            </ul>
+          </li>
+          <!-- 问题3开始 -->
+          <li class="dropdown">
+            <input type="checkbox" />
+            <!-- 标题部分 -->
+            <a href="#" data-toggle="dropdown">购买高速线缆的注意事项</a>
+            <ul class="dropdown-menu">
+              <!-- 内容部分 -->
+              <li><a href="#">
+                  高速线缆是一种替代光模块的低成本短距离连接解决方案，它由电缆和电缆两端的光纤收发装置组成，价格要比同类型的光模块便宜的多，在网络设备间的短距离连接应用受到了广泛欢迎。现在市场上的高速线缆多种多样，要购买一款满意的高速线缆产品，应重点考虑以下三个因素：<br><br>1、有源or无源<br>根据光纤收发装置中是否配置有电气元件，高速线缆可以分为有源高速线缆和无源高速线缆。无源高速线缆（例如10G
+                  SFP+高速线缆）无需电能驱动就能传输光信号，而且在传输过程中不会对光信号进行放大、均衡等处理。有源高速线缆的光纤收发装置中配置有电气元件，它在传输光信号的同时还会对其进行放大处理，从而增加传输距离。因此，有源高速线缆的传输距离要比无源高速线缆远，但是其价格也更加昂贵。<br><br>2、线缆长度<br>AWG即美国线规，是一种区分导线直径的标准，高速线缆的常见的AWG值有24AWG、28AWG和30AWG。选购高速线缆时，线缆长度越长，应选择AWG越大的线缆。一般来讲，无源高速线缆的最大传输距离是5
+                  m，而有源高速线缆的传输距离可以达到15m。因此，如果网络设备间的距离不超过5 m，选择无源高速线缆是最节省成本的解决方案；如果超过5 m且小于15
+                  m，则最好使用有源高速线缆，以保证光信号能够正常传输。<br><br>3、选择合适的接头类型<br>不同接头的高速线缆适合的应用也不尽相同，一般来说，SFP+高速线缆用于10G连接，QSFP+高速线缆用于40G连接，SFP28高速线缆用于25G连接，QSFP28高速线缆用于100G连接。此外，常见的QSFP+转4xSFP+高速线缆通常用于10G和40G网络设备间的连接。<br>
+                  </br>
+                  <!-- 转载链接 -->
+                  <span> 转自：https://www.gigalight.com/cn/bbs/faq-1557.html
+                  </span></a>
+              </li>
+            </ul>
+          </li>
+          <!-- 问题4开始 -->
+          <li class="dropdown">
+            <input type="checkbox" />
+            <!-- 标题部分 -->
+            <a href="#" data-toggle="dropdown">光纤跳线是什么及其分类</a>
+            <ul class="dropdown-menu">
+              <!-- 内容部分 -->
+              <li><a href="#">
+                  光纤跳线（Optical Fiber Patch
+                  Cable）：由光纤光缆与光纤连接器通过一定的工艺进行加工后将光纤光缆两端固定上光纤连接器，从而形成中间是光纤光缆、两端是光纤连接器的光纤跳线。<br><br>光纤跳线的分类<br><br>按模式分类：分为单模光纤和多模光纤<br><br>单模光纤：一般光纤跳线颜色是黄色，接头和保护套为蓝色；传输距离较长；<br><br>多模光纤：OM1和OM2跳线为橙色，OM3和OM4跳线为水绿色，千兆速率下OM1和OM2的传输距离为550米，万兆速率下OM3的传输距离为300米，OM4的传输速率为400米；接头和保护套用米色或者黑色；<br><br>按接头类型分类：<br><br>常用的光纤跳线类型有LC光纤跳线
+                  SC光纤跳线 FC光纤跳线
+                  ST光纤跳线这四种光纤跳线；<br><br>①LC光纤跳线：它采用操作方便的模块化插孔（RJ）闩锁机理制成，连接SFP光模块，常用于路由器；<br><br>②SC光纤跳线：它的外壳呈矩形，紧固方式是采用插拔销闩式，不须旋转，连接GBIC光模块，路由器交换机用的最多，具有价格低廉、接入损耗波动小等特点；<br><br>③FC光纤跳线：外部保护套是采用金属套，紧固方式为螺丝扣，配线架上使用最多。具有紧固性强、防灰尘等优点；<br><br>④ST光纤跳线：外壳呈圆形，紧固方式为螺丝扣，纤芯外露，插头插入后旋转半周有一卡口固定，多用于光纤配线架。<br><br>按应用分类：<br><br>光纤跳线按跳线的应用一般分为MTP／MPO光纤跳线、铠装光纤跳线、常规光纤跳线等。<br><br>①MTP／MPO光纤跳线：常见于布线过程中需要高密度集成的光纤线路环境中，其优点：使用简单推拉式锁定结构，安装取出方便，节省时间和成本，能够最大限度的提高使用寿命；<br><br>②铠装光纤跳线：常见于机房，适用于恶劣环境中。其优点：无需使用保护套管，能防潮防火，具有抗静电性和耐酸碱性，能节省空间，降低施工成本；<br><br>③常规光纤跳线：相比于MTP／MPO光纤跳线和铠装光纤跳线，具有很强的扩展性、兼容性和互操作性，能够有效的降低成本。<br>
+                  </br>
+                  <!-- 转载链接 -->
+                  <span> 转自：https://fiber.ofweek.com/2021-05/ART-11000-2100-30497753.html
+                  </span></a>
+              </li>
+            </ul>
+          </li>
+          <!-- 问题5开始 -->
+          <li class="dropdown">
+            <input type="checkbox" />
+            <!-- 标题部分 -->
+            <a href="#" data-toggle="dropdown">高速线缆使用方法</a>
+            <ul class="dropdown-menu">
+              <!-- 内容部分 -->
+              <li><a href="#">
+                  正确的使用方法以及几项注意小贴士，可以让高速线缆发挥最佳性能。<br>1、准备工作<br><br>为了防止高速线缆因静电放电遭到损坏，在安装或移除高速线缆时，必须保证戴好防静电腕带，注意要确保防静电腕带与皮肤接触，如果使用防静电手套，就要将防静电腕带套在防静电手套上。<br><br>
+                  <br><br>2、安装高速线缆<br><br>将端接在高速线缆一端的接头取下防尘塞，拿起接头使之与机架上的端口处在一条直线上（注意接头的拉环在上）；然后轻轻将接头水平推入到设备端口中，直至接头牢牢固定在端口内部。<br><br><br>3、移除高速线缆<br><br>轻轻拉高速线缆的接头，直至其能够在端口中活动，握住高速线缆，朝水平向外的方向轻轻拉接头上的拉环，直至将接头拔出，拔出后盖上接头的防尘塞以防接头受到污染。<br><br>4、检查<br><br>执行设备上显示光模块接口的命令，确保高速线缆安装正确，如果高速线缆的相关信息显示正确，那么就安装成功了，如果信息显示错误，那么安装未成功，或者是高速线缆与设备不兼容。<br><br>
+                  <br>
+                  </br>
+                  <!-- 转载链接 -->
+                  <span> 转自：https://www.gigalight.com/cn/bbs/faq-1587.html
+                  </span></a>
+              </li>
+            </ul>
+          </li>
+          <!-- 问题6开始 -->
+          <li class="dropdown">
+            <input type="checkbox" />
+            <!-- 标题部分 -->
+            <a href="#" data-toggle="dropdown">光模块眼图不良</a>
+            <ul class="dropdown-menu">
+              <!-- 内容部分 -->
+              <li><a href="#">
+                  光模块眼图不良一般有消光率不良、眼图散射、图形不规则、或无眼图几种现象。<br><br>造成消光率不良的原因有消光比过大或过小，此时则应该更换TOSA发射组件，或降低/提高光功率电阻；<br><br>造成光模块眼图散射的原因有TOSA损坏、驱动芯片性能不佳，或信号阻抗不匹配，此时则应更换光模块内部TOSA、更换驱动芯片，或改变前端匹配电阻；<br><br>当光模块眼图出现图形不规则现象时，则需要修改上拉/下拉电阻和匹配电阻的值;<br><br>当光模块在检测中出现无眼图现象，则是因为TOSA损坏，或前端的匹配电阻焊接不良，此时更换受损的TOSA组件，或重新焊接加固匹配电阻即可。<br>
+                  </br>
+                  <!-- 转载链接 -->
+                  <span> 转自：https://baijiahao.baidu.com/s?id=1716029123689695865&wfr=spider&for=pc
+                  </span></a>
+              </li>
+            </ul>
+          </li>
+          <!-- 问题7开始 -->
+          <li class="dropdown">
+            <input type="checkbox" />
+            <!-- 标题部分 -->
+            <a href="#" data-toggle="dropdown">光模块常见外部故障及解决方案</a>
+            <ul class="dropdown-menu">
+              <!-- 内容部分 -->
+              <li><a href="#">
+                  除了光模块内部故障外，光模块在使用过程中的操作也有可能造成光模块的外部故障，主要表现有以下四种：<br><br>1、电源灯不亮；<br><br>此种现象多为电源故障，需检查电源线或更换电源。<br><br>2、链接灯不亮；<br><br>检查光纤线路是否完好，设备接口与光纤跳线连接松动，光纤跳线与耦合器，断纤；<br><br>检查光纤线路损耗是否过大，是否超出所用发射/接收对的损耗预算；<br><br>检查光接口是否正确连接，远方本地TX和RX连接，远方本地RX和TX连接；<br><br>检查光纤跳线是否正确，确保连接器类型与设备接口（APC/UPC/PC）匹配，光纤类型（MMF/SMF）与设备类型匹配，支持的传输长度与链路距离匹配。<br><br>3、电路链接灯不亮；<br><br>检查网线是否为断路器；<br><br>检查连接类型是否匹配（计算机等设备使用交叉线，交换机、集线器等设备使用直线）；<br><br>检查设备传输速率是否匹配。<br><br>4、严重网络包；<br><br>收发器的电源端口与网络设备接口不匹配或两端设备接口的传输方式（半双工/全双工）不匹配；<br><br>RJ-45
+                  头扭曲问题；<br><br>光纤连接问题，光纤跳线未对齐，或耦合器与跳线不匹配。<br>
+                  </br>
+                  <!-- 转载链接 -->
+                  <span> 转自：https://baijiahao.baidu.com/s?id=1716029123689695865&wfr=spider&for=pc
+                  </span></a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+    <!-- 主要内容结束 -->
+    
+  </div>
+      <!-- -------页脚开始------- -->
+      <footer>
+        <!-- 左侧内容区域 -->
+        <div class="footer_left">
+          <div class="footer_p1">
+            <span class="word13">常见问题</span>
+            <ul>
+              <li><a href="./question.html">安装服务</a></li>
+              <li><a href="./question.html">维护服务</a></li>
+              <li><a href="./question.html">常见问题</a></li>
+            </ul>
+          </div>
+          <div class="footer_p1">
+            <span class="word13">联系我们</span>
+            <ul>
+              <li>电话：15652752183</li>
+              <li>业务咨询：dongyan@yaoqitengfei.com</li>
+              <li>QQ：511058979</li>
+              <li>地址：北京昌平区建材城西路新龙大厦A座</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 右侧二维码区域 -->
+        <div class="footer_right">
+          <div>
+            <img src=" /img/icon/二维码.png" />
+            <span>微信扫一扫&nbsp;立即咨询</span>
+          </div>
+        </div>
+      </footer>
+
+
+        <div class="footer_bottom">CopyRight 2021 All Right Reserved</div>
+  
+        <!-- ----------弹窗------ -->
+  
+        <div class="zhezhao" id="zhezhao">
+          <div class="tankuang">
+            <div
+              id="closeicon"
+              class="iconfont icon-icon-close"
+              onclick="hidder()"
+            ></div>
+            <div class="contactway">
+              <h4>立即联系我们</h4>
+              <img src=" /img/icon/二维码.png" alt="瑶琪腾飞 微信" />
+              <p>电话：15652752183</p>
+              <p>e-mail：dongyan@yaoqitengfei.com</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- index的最后一个div -->
+      </div>
+  
+      <!-- 引入联系方式弹框 -->
+      <script src=" /popup/popup.js"></script>
+      <script src=" /js文件集合/onclock_navbar.js"></script>
+  <script src="/iconfont2/iconfont.js"></script>
+</body>
+
+</html>

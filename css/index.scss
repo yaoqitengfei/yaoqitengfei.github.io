@@ -1,0 +1,413 @@
+// 报错看一下有没有加；符号
+$color-primary: #006bfc;
+$color-second: #2192fb;
+$color-border: #d6d6d6 1px solid;
+$fontcolor-white: #fff;
+$fontcolor-first: #000;
+$fontcolor-second: #999;
+$font-h1-28px: 28px;
+$font-h2-16px: 16px;
+$font-second-14px: 14px;
+$font-min: 12px;
+
+// 调试背景及边框
+// 背景框
+@mixin testbo {
+  border: blue 1px solid;
+}
+// 背景色
+@mixin testbg {
+  background-color: red;
+}
+// 栏目间间距
+@mixin gapwidth {
+  margin-bottom: 96px;
+  //【移动端】屏幕大小为760px时，栏目间间距缩小
+  @media screen and (max-width: 760px) {
+    margin-bottom: 40px;
+  }
+}
+// 一级标题与文字间间距
+@mixin gapwidth_title {
+  margin-bottom: 12px;
+}
+
+// -------总体调整部位------
+// 父级塌陷问题解决方案
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// 删掉所有的下划线
+a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+// 一级标题部分调整
+h1 {
+  font-size: $font-h1-28px;
+  font-weight: 500;
+  line-height: 40px;
+  @include gapwidth_title();
+}
+i {
+  color: $color-primary;
+  font-size: 12px;
+}
+// ----首页部分调整-------
+
+// 布局开始
+// banner区域开始
+.bgimg {
+  // banner设置为背景图片,图片根据视窗大小伸缩，占比不变
+  height: 70vh;
+  background-image: url(https://imglf3.lf127.net/img/a485551f7831b0ac/ZXZWRWorSEZ6ZU9LVFdXZmpVM0ZUVENuTjBWMXdoK01CV3ZpbTRLV2FOWT0.png?imageView&thumbnail=1000x0&type=png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  @include gapwidth();
+  backface-visibility: hidden; // 防止动画位移
+  overflow: hidden;
+  video {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+  //【移动端】banner图片变换以及格式的改变
+
+  @media screen and (max-width: 650px) {
+    background-image: url(https://imglf5.lf127.net/img/46da05d7fc1c1a13/ZXZWRWorSEZ6ZU9LVFdXZmpVM0ZUYWY5TG5SSFlLZEN1TVRuSkRXRnlIaz0.png?imageView&thumbnail=1000x0&type=png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+  }
+
+  // 标题文字部分
+  // 位置的使用 以及动画部分
+  .headlinebox {
+    width: 90%;
+    // border: red 1px solid;
+    //文字的位置确认
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+
+    // 主要solgn大小及字间距
+    .headline {
+      font-size: 48px;
+      font-weight: 400;
+      color: $fontcolor-first;
+      line-height: 67px;
+      letter-spacing: 4px;
+      // 动画名称
+      animation-name: moveInLeft;
+      // 动画时长
+      animation-duration: 1.5s;
+      // 缓动
+      animation-timing-function: ease-out;
+
+      // 延时播放2时          animation-delay: 2s;
+      // 重复播放3次        animation-iteration-count: 3;
+    }
+
+    // 次要标题大小及间距
+    .headline-sub {
+      font-size: 18px;
+      font-weight: 100;
+      color: $fontcolor-first;
+      line-height: 27px;
+      letter-spacing: 14px;
+      // 动画名称
+      animation-name: moveInLeft;
+      // 动画时长
+      animation-duration: 1.5s;
+      // 缓动
+      animation-timing-function: ease-out;
+    }
+
+    //【移动端】banner字体部分修改变小以及文字位置居中
+    @media screen and (max-width: 650px) {
+      // 文字位置变动
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0 auto;
+      .headline {
+        font-size: 26px;
+        line-height: 27px;
+        text-align: center;
+      }
+      .headline-sub {
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+      }
+    }
+  }
+
+  // 优势介绍部分
+  .introbox {
+    width: 100%;
+    // border: blue 1px solid;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+
+    //【移动端】屏幕缩小为650px时，banner介绍部分去除
+    @media screen and (max-width: 650px) {
+      display: none;
+    }
+
+    .introduction {
+      width: 33.3%;
+      height: 101px;
+      //制作磨砂卡片
+      background-color: rgba(255, 255, 255, 0.2); //背景白色透明
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px); //背景模糊
+      max-width: 50%;
+      max-height: 50%;
+      text-align: center;
+      line-height: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        display: block;
+
+        //第一行文字
+        &:first-child {
+          font-size: 18px;
+          line-height: 25px;
+          margin-bottom: 12px;
+          font-weight: 600;
+        }
+        //说明文字
+        &:last-child {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+// 关于我们开始
+.aboutus {
+  margin: 0 auto;
+  @include gapwidth();
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  //【移动端】为了防止双行产品卡片下间距导致的栏目之间距离过大 手动上移一部分
+  @media screen and (max-width: 960px) and(min-width:375px) {
+    margin-top: -40px;
+  }
+  //【移动端】标题部分抽出
+  .flex-moible {
+    display: none;
+  }
+
+  // 关于我们文字部分
+  .aboutus_content {
+    width: 52%;
+    p {
+      font-size: 16px;
+      color: $fontcolor-second;
+      line-height: 22px;
+      margin-bottom: 5%;
+    }
+    button {
+      display: block;
+      width: 162px;
+      height: 48px;
+      background-color: $color-second;
+      color: $fontcolor-white;
+      border: 0px;
+      margin-bottom: 7%;
+    }
+
+    // 关于我们数据部分
+    ul {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @include gapwidth_title();
+      li {
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        h1 {
+          margin-bottom: 4px;
+        }
+        span {
+          font-size: 14px;
+          color: $fontcolor-second;
+        }
+      }
+    }
+  }
+
+  // 企业图片
+  .aboutus_img {
+    width: 44%;
+    background-image: url(/img/icon/aboutus_company.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media screen and (max-width: 660px) {
+    display: flex;
+    flex-direction: column;
+
+    //移动端时标题显示
+    .flex-moible {
+      display: block;
+    }
+
+    //关于我们文字部分
+    .aboutus_content {
+      order: 3;
+      width: 100%;
+      i,
+      h1,
+      button,
+      ul {
+        display: none;
+        background: red;
+      }
+    }
+    //企业图片部分
+    .aboutus_img {
+      order: 1;
+      width: 100%;
+      height: 374px;
+      background-image: url(/img/icon/aboutus_company.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      display: block;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+// 支持栏目开始
+.supportbox {
+  margin: 0 auto;
+  width: 90%;
+  // @include gapwidth();
+
+  // 不带有链接的一级标题
+  .first_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include gapwidth_title();
+    h1 {
+      margin-bottom: 1%;
+    }
+    // 链接样式
+    span {
+      font-size: 12px;
+      color: $fontcolor-second;
+      display: block;
+      //【移动端】宽度缩小到490px左侧说明文字消失
+      @media screen and (max-width: 490px) {
+        display: none;
+      }
+    }
+  }
+
+  // 支持卡片列表
+  .supportcard_line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    // 单个支持卡片
+    .supportcard {
+      width: 48%;
+      // 为了防止padding将盒子宽度撑出想要的范围，增加了boxsizing 规范盒子大小
+      padding: 12px 24px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+      margin-bottom: 4%;
+
+      // icon图片
+      img {
+        width: 22%;
+      }
+
+      // 文字说明部分
+      .font_box {
+        margin-left: 12px;
+        h2 {
+          font-weight: bold;
+          margin-bottom: 8px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+    @media screen and (max-width: 830px) {
+      .supportcard {
+        width: 100%;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+        margin-bottom: 40px;
+        padding: 0;
+        img {
+          width: 16%;
+        }
+      }
+    }
+  }
+}
+
+//--------------- 动画部分---------------
+// 左侧缓进由透明至可见，同时撞墙回弹1px
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(-1px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

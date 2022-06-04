@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>产品_瑶琪腾飞</title>
+    <link rel="icon" href="/img/icon/图形logo-svg.svg" />
+    <meta name="keywords" content="瑶琪腾飞，光网络，瑶琪，光网络服务" />
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="/reset.css" />
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="/css/public.min.css" />
+    <link rel="stylesheet" href="/css/product.css" />
+    <link rel="stylesheet" href="/iconfont2/iconfont.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="indexbox">
+      <!-- 导航栏开始 -->
+      <div class="navbarbox">
+        <a id="logoimg" href="/index.html"><img src=" /img/icon/logo+文字.svg" alt="瑶琪腾飞" /></a>
+
+        <!-- 右侧链接 -->
+        <ul class="menu-top">
+          <li><a href="/index.html">首页</a></li>
+          <li><a href="./product.html">产品</a></li>
+          <li><a href="./question.html">常见问题</a></li>
+          <li><a href="./aboutus.html">关于我们</a></li>
+        </ul>
+        <!--【移动端】屏幕<760px时显示的部分，其余像素隐藏 -->
+        <!--icon更多按钮 -->
+        <p
+          class="openbtn iconfont"
+          style="font-size: 32px; line-height: 68px"
+          onclick="openNav()"
+        >
+          &#xe608;
+        </p>
+        <!-- 【移动端】navbar  -->
+        <div id="myNav" class="flex-mobile">
+          <div class="top">
+            <img src=" /img/icon/logo+文字.svg" alt="瑶琪腾飞" />
+            <!--icon关闭按钮 -->
+            <p>
+              <a
+                href="#"
+                class="closebtn iconfont icon-icon-close1"
+                onclick="closeNav()"
+              ></a>
+            </p>
+          </div>
+          <ul class="overlay-content">
+            <li><a href="/index.html">首页</a></li>
+            <li><a href="./product.html">产品</a></li>
+            <li><a href="./question.html">常见问题</a></li>
+            <li><a href="./aboutus.html">关于我们</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- banner -->
+      <div class="bgimg">
+        <div class="img"></div>
+        <div class="floatbox">
+          <div class="headlinebox">
+            <p class="headline">优质产品 铸就未来</p>
+            <p class="headline-sub">更多产品请咨询专业顾问</p>
+          </div>
+          <button>专业顾问</button>
+        </div>
+      </div>
+
+      <!-- 切换栏开始 -->
+      <div class="tabbox">
+        <ul>
+          <li data-index="0" class="current">光模块</li>
+          <li data-index="1">智能网卡/DPU</li>
+          <li data-index="2">光纤跳线</li>
+          <li data-index="3">高速光缆 AOC/高速线缆 DAC</li>
+        </ul>
+      </div>
+      <!-- 内容区开始 -->
+      <div class="tab-contentbox">
+        <div class="item" style="display: block">
+          <!-- 【 光模块 】产品栏开始 -->
+          <div class="productbox">
+            <!-- 一行四个 -->
+            <ul class="productline">
+              <!-- 产品卡片开始 -->
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <div class="productimg"></div>
+                    <img src="/img/product/光模块-1.png" />
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">QDD-400G-ER8</h2>
+                    <p class="font_explain">
+                      400GBASE-ER8 QSFP-DD 400G光模块1310nm 40km
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/QDD-800G-DR8+.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">800GBASE-DR8+</h2>
+                    <p class="font_explain">
+                      800GBASE-DR8+ QSFP-DD 800G光模块1310nm 2km
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/SFP-25G-SR.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">SFP-25G-SR</h2>
+                    <p class="font_explain">
+                      25GBASE-SR SFP28 25G光模块850nm 100m
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/光模块-100GQSFP28.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">100G-QSFP28</h2>
+                    <p class="font_explain">
+                      100/112GBASE-LR4 QSFP28 100G双速率光模块1310nm 10km
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/SFP-25G-ER-BDD-40.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">SFP-25G-ER-BDD-40</h2>
+                    <p class="font_explain">
+                      25GBASE-BX SFP28单纤双向光模块TX-1330nm/RX-1270nm 40km
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/QSFP-40G-ER4.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">QSFP-40G-ER4</h2>
+                    <p class="font_explain">
+                      40GBASE-ER4 QSFP+ 40G光模块1310nm 40km
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/SFP-FE-T.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">SFP-FE-T</h2>
+                    <p class="font_explain">100BASE-T SFP百兆电口模块100m</p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/SFP-10G-ER-DW40.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">SFP-10G-ER-DW40</h2>
+                    <p class="font_explain">
+                      10GBASE-DWDM SFP+万兆光模块C17-C61 100GHZ 40km
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/SFP-1GE-ZR-BDD-120.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">SFP-1GE-ZR-BDD-120</h2>
+                    <p class="font_explain">
+                      1000BASE-BX SFP千兆单纤双向光模块TX-1550nm/RX-1490nm 120km
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/SFP-622M-ZR-120.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">SFP-622M-ZR-120</h2>
+                    <p class="font_explain">
+                      622BASE-EZX SFP OC-12/STM-4同步数字光模块1550nm 120km
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <!-- 占位元素 -->
+              <li class="blank"></li>
+              <li class="blank"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <!--【 智能网卡/DPU 】 产品栏开始 -->
+          <div class="productbox">
+            <!-- 一行四个 -->
+            <ul class="productline">
+              <!-- 产品卡片开始 -->
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/MCX516A-CCAT.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">MCX516A-CCAT</h2>
+                    <p class="font_explain">
+                      ConnectX-5 EN adapter card 100G双端口以太网网卡
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/MCX4121A-ACAT.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">MCX4121A-ACAT</h2>
+                    <p class="font_explain">
+                      ConnectX-4 Lx EN adapter card 25G双端口以太网网卡
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/MCX623106AN-CDAT.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">MCX623106AN-CDAT</h2>
+                    <p class="font_explain">
+                      ConnectX-6 DX adapter card 100G双端口以太网网卡
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/NVIDIA BlueField-3 DPU.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">BlueField-3 DPU</h2>
+                    <p class="font_explain">NVIDIA BlueField-3 DPU</p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/BlueField-2 DPU.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">BlueField-2 DPU</h2>
+                    <p class="font_explain">NVIDIA BlueField-2 DPU</p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/NVIDIA 融合加速器.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">融合加速器</h2>
+                    <p class="font_explain">NVIDIA 融合加速器</p>
+                  </div>
+                </a>
+              </li>
+              <!-- 占位元素 -->
+              <li class="blank"></li>
+              <!-- 占位元素 -->
+              <li class="blank"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <!--【 光纤跳线 】 产品栏开始 -->
+          <div class="productbox">
+            <!-- 一行四个 -->
+            <ul class="productline">
+              <!-- 产品卡片开始 -->
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/8BMPOLCOM4.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">8BMPOLCOM4</h2>
+                    <p class="font_explain">
+                      8芯 MPO (Female) to 4*LC双工多模OM4分支光纤跳线，极性B，OFNP
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/12BMPOSMF.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">12BMPOSMF</h2>
+                    <p class="font_explain">
+                      12芯MPO (Female) to MPO (Female) 单模OS2光纤跳线，极性B，OFNP
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/SM-LCU-SCU.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">SM-LCU-SCU</h2>
+                    <p class="font_explain">
+                       LC/UPC-SC/UPC双工单模OS2光纤跳线-2.0mm PVC(OFNR)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/OM4-LC-SC.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">OM4-LC-SC</h2>
+                    <p class="font_explain">
+                      LC/UPC-SC/UPC双工多模OM4光纤跳线-2.0mm PVC(OFNR)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/OM3-LC-SC.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">OM3-LC-SC</h2>
+                    <p class="font_explain">
+                      LC/UPC-SC/UPC双工多模OM3光纤跳线-2.0mm PVC(OFNR)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/OM2-LC-SC.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">OM2-LC-SC</h2>
+                    <p class="font_explain">
+                      LC/UPC-SC/UPC双工多模OM2光纤跳线-2.0mm PVC(OFNR)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <!-- 占位元素 -->
+              <li class="blank"></li>
+              <li class="blank"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <!--【 高速线缆 AOC/高速线缆DAC 】 产品栏开始 -->
+          <div class="productbox">
+            <!-- 一行四个 -->
+            <ul class="productline">
+              <!-- 产品卡片开始 -->
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/SFP-10G-A20.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">SFP-10G-A20</h2>
+                    <p class="font_explain">20m 10G SFP+ 有源光缆</p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/SFP-10G-A3.5.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">SFP-10G-A3.5</h2>
+                    <p class="font_explain">3.5m 10G SFP+ 有源光缆 </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/Q2Q56-200G-A30.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">Q2Q56-200G-A30</h2>
+                    <p class="font_explain">
+                      30m 200G QSFP56转2X100G QSFP56有源光缆
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/SFP-10G-CU1.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">SFP-10G-CU1</h2>
+                    <p class="font_explain">1m 10G SFP+ 无源铜芯高速线缆</p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/QDD-400G-CU3.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">QDD-400G-CU3</h2>
+                    <p class="font_explain">3m 400G QSFP-DD 无源铜芯高速线缆</p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/Q4SFP-40G-CU0.5.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">Q4SFP-40G-CU0.5</h2>
+                    <p class="font_explain">
+                      0.5m 40G QSFP+转4X10G SFP+ 无源铜芯高速线缆
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="product" onclick="dianwo()">
+                <a href="javascript:void(0) ">
+                  <div class="img_box">
+                    <img src="/img/product/Q4SFP-40G-CU7.png" />
+
+                    <button class="product_buttom">立即咨询</button>
+                  </div>
+                  <div class="font_box">
+                    <h2 class="font_title">Q4SFP-40G-CU7</h2>
+                    <p class="font_explain">
+                      7m 40G QSFP+转4X10G SFP+ 无源铜芯高速线缆
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <!-- 占位元素 -->
+              <li class="blank"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------页脚开始------- -->
+      <footer>
+        <!-- 左侧内容区域 -->
+        <div class="footer_left">
+          <div class="footer_p1">
+            <span class="word13">常见问题</span>
+            <ul>
+              <li><a href="./question.html">安装服务</a></li>
+              <li><a href="./question.html">维护服务</a></li>
+              <li><a href="./question.html">常见问题</a></li>
+            </ul>
+          </div>
+          <div class="footer_p1">
+            <span class="word13">联系我们</span>
+            <ul>
+              <li>电话：15652752183</li>
+              <li>业务咨询：dongyan@yaoqitengfei.com</li>
+              <li>QQ：511058979</li>
+              <li>地址：北京昌平区建材城西路新龙大厦A座</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 右侧二维码区域 -->
+        <div class="footer_right">
+          <div>
+            <img src=" /img/icon/二维码.png" />
+            <span>微信扫一扫&nbsp;立即咨询</span>
+          </div>
+        </div>
+      </footer>
+      <div class="footer_bottom">CopyRight 2021 All Right Reserved</div>
+
+      <!-- ----------弹窗------ -->
+
+      <div class="zhezhao" id="zhezhao">
+        <div class="tankuang">
+          <div
+            id="closeicon"
+            class="iconfont icon-icon-close"
+            onclick="hidder()"
+          ></div>
+          <div class="contactway">
+            <h4>立即联系我们</h4>
+            <img src=" /img/icon/二维码.png" alt="瑶琪腾飞 微信" />
+            <p>电话：15652752183</p>
+            <p>e-mail：dongyan@yaoqitengfei.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- index的最后一个div -->
+    </div>
+
+    <!-- 引入联系方式弹框 -->
+    <script src="/popup/popup.js"></script>
+    <script src="/js文件集合/tab_switch.js"></script>
+    <script src="/js文件集合/onclock_navbar.js"></script>
+    <script></script>
+  </body>
+</html>
